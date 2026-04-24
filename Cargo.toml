@@ -1,0 +1,59 @@
+[package]
+name = "solis_3d"
+authors = ["Eugene Hauptmann"]
+description = "Screen-space indirect lighting and ambient occlusion for Bevy"
+keywords = ["illumination", "bevy", "light", "graphics", "gi", "ssil"]
+readme = "README.md"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+categories = ["Game development", "Graphics", "Rendering"]
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[dependencies]
+bevy = { version = "0.15", default-features = false, features = [
+  "bevy_pbr",
+  "bevy_render",
+  "bevy_core_pipeline",
+  "bevy_window",
+  "bevy_asset",
+] }
+bitflags = "2.5.0"
+
+[dev-dependencies]
+bevy_panorbit_camera = "0.21"
+bevy = { version = "0.15", default-features = false, features = [
+  "bevy_pbr",
+  "bevy_render",
+  "bevy_core_pipeline",
+  "bevy_window",
+  "bevy_asset",
+  "bevy_winit",
+  "bevy_scene",
+  "bevy_gltf",
+  "multi_threaded",
+  "default_font",
+  "tonemapping_luts",
+  "png",
+  "x11",
+] }
+
+[features]
+dev = ["bevy/file_watcher", "bevy/embedded_watcher", "bevy/multi_threaded"]
+
+[[example]]
+name = "basic"
+path = "examples/basic.rs"
+
+[[example]]
+name = "msaa"
+path = "examples/msaa.rs"
+
+[[example]]
+name = "autotest"
+path = "examples/autotest.rs"
