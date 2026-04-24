@@ -2,6 +2,8 @@
 
 Screen-space indirect lighting and ambient occlusion for [Bevy](https://bevyengine.org/).
 
+![Cornell box rendered with solis_3d](screenshots/front.png)
+
 Implements the [Visibility Bitmask SSIL](https://arxiv.org/abs/2301.11376) algorithm (Therrien et al. 2023) as a Bevy render plugin. Produces noise-free indirect lighting and ambient occlusion in a single compute pass, with no ray tracing hardware required.
 
 ## Features

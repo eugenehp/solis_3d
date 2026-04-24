@@ -19,9 +19,9 @@ struct ShotState {
 }
 
 const ANGLES: &[(Vec3, Vec3, &str)] = &[
-    (Vec3::new(0.0, 2.5, 6.0), Vec3::new(0.0, 1.5, 0.0), "/Users/Shared/solis_3d/shot_front.png"),
-    (Vec3::new(-5.0, 3.0, 0.0), Vec3::new(0.0, 1.5, 0.0), "/Users/Shared/solis_3d/shot_left.png"),
-    (Vec3::new(4.0, 1.0, 4.0), Vec3::new(0.0, 1.5, -1.0), "/Users/Shared/solis_3d/shot_corner.png"),
+    (Vec3::new(0.0, 2.5, 6.0), Vec3::new(0.0, 1.5, 0.0), "/Users/Shared/solis_3d/screenshots/front.png"),
+    (Vec3::new(-5.0, 3.0, 0.0), Vec3::new(0.0, 1.5, 0.0), "/Users/Shared/solis_3d/screenshots/left.png"),
+    (Vec3::new(4.0, 1.0, 4.0), Vec3::new(0.0, 1.5, -1.0), "/Users/Shared/solis_3d/screenshots/corner.png"),
 ];
 
 fn multi_angle_screenshots(
